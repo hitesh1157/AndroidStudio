@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register"
+    android:padding="10dp"
+    tools:context="com.example.hiteshkr.test1.UserAreaActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Welcome,"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="19dp"
+        app:layout_constraintBottom_toBottomOf="@+id/etName"
+        android:layout_marginTop="15dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/etName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/tvWelcomeMsg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="26dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="26dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bLogout"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/btn_login_bg"
+        android:paddingLeft="10dp"
+        android:text="Logout"
+        android:textColor="@color/btn_login"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="6dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="2dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="141dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Login Button -->
+
+        <Button
+            android:id="@+id/bQuery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="Add query"
+            android:textColor="@color/input_register_bg" />
+
+        <Button
+            android:id="@+id/bSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="Search Query by tag"
+            android:textColor="@color/input_register_bg" />
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

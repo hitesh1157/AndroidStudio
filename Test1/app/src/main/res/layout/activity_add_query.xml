@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hiteshkr.test1.AddQuery"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etTopic"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/etTopic"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Topic"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etTOM"
+        app:layout_constraintTop_toBottomOf="@+id/etSubject"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/etTOM"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Type of mistake"
+        android:inputType="textPersonName"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etCI"
+        app:layout_constraintTop_toBottomOf="@+id/etTopic"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/etCI"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Concept involved"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etTags"
+        app:layout_constraintTop_toBottomOf="@+id/etTOM"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <EditText
+        android:id="@+id/etTags"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Tags (comma separated)"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bCapture"
+        app:layout_constraintTop_toBottomOf="@+id/etCI"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        tools:layout_constraintLeft_creator="1" />
+
+    <Button
+        android:id="@+id/bSaveQuery"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:text="Save"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="14dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/bCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/imageView"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="133dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="249dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:srcCompat="@android:color/background_light"
+        app:layout_constraintRight_toLeftOf="@+id/bCapture"
+        app:layout_constraintBottom_toTopOf="@+id/bSaveQuery"
+        app:layout_constraintTop_toBottomOf="@+id/etTags"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="15dp" />
+</android.support.constraint.ConstraintLayout>

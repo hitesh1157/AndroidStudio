@@ -12,7 +12,7 @@ and on the table 'user' -
 
     Add tuple which stores login credentials of registered user
 
-Future implementations -
+Future implementation(s) -
 
     Users' login password encryption using php
     

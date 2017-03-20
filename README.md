@@ -14,7 +14,7 @@ and on the table 'user' -
 
 Future implementations -
 
-    Users' login password encryption
+    Users' login password encryption using php
     
 
 Database - mySQL

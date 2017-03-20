@@ -25,7 +25,7 @@ PHP version 7.0.x
 
 Webhost: https://www.000webhost.com/
 
-Website: http://160298.000webhost.com/
+Website: https://160298.000webhostapp.com/
 
 Server: Localhost via UNIX socket
 

@@ -7,6 +7,11 @@ Test1 implements basics of Online database management using PHP, Java integrated
 The app performs the following operations on the table 'query2' - 
     Add tuple
     Edit tuple by deleting the previous version of the tuple and assigning then new unique query_id
+and on the table 'user'
+    Add tuple which stores login credentials of registered user
+
+Future implementations -
+    Users' login password encryption
     
 
 Database - mySQL

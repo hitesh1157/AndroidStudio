@@ -3,7 +3,7 @@ ASP (Android Studio Projects)
 
 Application - Test1 version 1.0
 
-(Concept - https://drive.google.com/open?id=0B8Si7tT6jF48Zlo2eDJvMUpXaDQ)
+(For concept, go to -> Documentation.pdf - https://drive.google.com/open?id=0B8Si7tT6jF48Zlo2eDJvMUpXaDQ)
 
 Test1 implements basics of Online database management using PHP, Java integrated within Android environment.
 The app performs the following operations on the table 'query2' - 

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
 
-                String[] fruits = {"Keep your face always toward the sunshine—and shadows will fall behind you.","It is always the simple that produces the marvelous.","PThe world is full of magical things patiently waiting for our wits to grow sharper."};
+                String[] fruits = {"Keep your face always toward the sunshine—and shadows will fall behind you.","It is always the simple that produces the marvelous.","The world is full of magical things patiently waiting for our wits to grow sharper."};
                 Snackbar.make(view, fruits[new Random().nextInt(fruits.length)], Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }

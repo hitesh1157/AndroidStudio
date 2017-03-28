@@ -14,8 +14,17 @@
 
     <ExpandableListView
         android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/expandableListView_search"
+        android:layout_alignParentStart="true"></ExpandableListView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:id="@+id/expandableListView_search"></ExpandableListView>
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Click image to edit" />
 
 </RelativeLayout>

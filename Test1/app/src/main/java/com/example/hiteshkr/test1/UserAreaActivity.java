@@ -40,7 +40,7 @@ public class UserAreaActivity extends AppCompatActivity {
         Intent intent = getIntent();
         final String name = intent.getStringExtra("name");
         final String username = intent.getStringExtra("username");
-        int userID = intent.getIntExtra("user_id", -1);
+        final int userID = intent.getIntExtra("user_id", -1);
 
 
         final TextView etName = (TextView) findViewById(R.id.etName);
@@ -49,8 +49,27 @@ public class UserAreaActivity extends AppCompatActivity {
 
         final Button bLogout = (Button) findViewById(R.id.bLogout);
         final Button bQuery = (Button) findViewById(R.id.bQuery);
+        final Button bDelete = (Button) findViewById(R.id.bDelete);
         final Button bSearch = (Button) findViewById(R.id.bSearch);
+        final Button bCSearch = (Button) findViewById(R.id.bCSearch);
         final int user_id = userID;
+
+        bDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        bCSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent cs = new Intent(UserAreaActivity.this, CustomSearch.class);
+                cs.putExtra("user_id", userID);
+                UserAreaActivity.this.startActivity(cs);
+            }
+        });
 
         bLogout.setOnClickListener(new View.OnClickListener() {
             @Override

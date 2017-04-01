@@ -1,6 +1,8 @@
 # androidStudio
 ASP (Android Studio Projects)
 
+e-Mistake Manager App
+
 Application - Test1 version 1.0
 
 (For concept, go to -> Documentation.pdf - https://drive.google.com/open?id=0B8Si7tT6jF48Zlo2eDJvMUpXaDQ)
